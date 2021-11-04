@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Category 1",
+        "shortLink": "category-1",
+        "img": "frog-1"
+    },{
+        "title": "Category 2",
+        "shortLink": "category-2",
+        "img": "frog-2"
+    },{
+        "title": "Category 3",
+        "shortLink": "category-3",
+        "img": "frog-3"
+    },{
+        "title": "Category 4",
+        "shortLink": "category-4",
+        "img": "frog-4"
+    },{
+        "title": "Category 5",
+        "shortLink": "category-5",
+        "img": "frog-5"
+    },{
+        "title": "Category 6",
+        "shortLink": "category-6",
+        "img": "frog-6"
+    },{
+        "title": "Category 7",
+        "shortLink": "category-7",
+        "img": "frog-7"
+    }
+]
