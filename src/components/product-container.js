@@ -6,7 +6,9 @@ import Product from "./product";
 
 export default class ProductContainer extends Component {
   componentDidMount() {
-    console.log(document.querySelector(".carousel > .slider-wrapper > .slider.animated"));
+    console.log(
+      document.querySelector(".carousel > .slider-wrapper > .slider.animated")
+    );
   }
   render() {
     return (
@@ -15,7 +17,7 @@ export default class ProductContainer extends Component {
           {products.map((product, index) => (
             <Product
               key={`product-${index}`}
-              id= {index}
+              id={index}
               img={product.img}
               title={product.title}
               handleAddToCart={this.props.handleAddToCart}
