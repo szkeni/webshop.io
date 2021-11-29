@@ -23,13 +23,13 @@ export default class Home extends Component {
     else newCart.push({ ...data[id], qty: 1 });
     this.setState({ cart: newCart }, () => {
       window.localStorage.setItem("products", JSON.stringify(newCart));
+      window.dispatchEvent(new CustomEvent("itemsUpdated"));
     });
     console.log(id);
   };
   render() {
     return (
       <>
-        <Header />
         <Categories />
         <ProductContainer handleAddToCart={this.handleAddToCart} />
         <Footer />

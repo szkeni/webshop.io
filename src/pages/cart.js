@@ -12,7 +12,6 @@ export default class Cart extends Component {
   render() {
     return (
       <>
-        <Header />
         <div>
           <h1>Cart</h1>
           <hr />
@@ -32,6 +31,7 @@ export default class Cart extends Component {
                     );
                     this.setState({ products: newarray }, () => {
                         window.localStorage.setItem("products", JSON.stringify(newarray));
+                        window.dispatchEvent(new CustomEvent("itemsUpdated"));
                       });
                   }}
                 />

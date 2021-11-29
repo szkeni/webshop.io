@@ -85,5 +85,22 @@ footer{
 }
 a, a:visited, a:focus{
   text-decoration: none;
-  color: #000000
+  color: #000000;
+  height:fit-content;
+}
+.product > a > img{
+  max-width: 500px;
+}
+::selection{
+  background: #90DCA3;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: #90DCA3;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #52b16a; 
 }

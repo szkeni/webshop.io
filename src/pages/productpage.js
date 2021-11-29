@@ -7,7 +7,6 @@ export default class Productpage extends Component {
     const product = data[this.props.id];
     return (
       <>
-        <Header />
         <div id="productData">
           <img src={`/assets/images/frog-${Number(this.props.id) + 1}.png`} />
           <div>
